@@ -1,0 +1,27 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>mytag</short-name>
+	
+	<tag>
+
+		<name>Rating</name>
+		<tag-class>tag.CustomerTag</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>min</name>
+			<type>java.lang.Integer</type>
+		</attribute>
+
+		<attribute>
+			<name>max</name>
+			<type>java.lang.Integer</type>
+		</attribute>
+		
+		<attribute>
+			<name>value</name>
+			<type>java.lang.Integer</type>
+		</attribute>
+	</tag>
+</taglib>

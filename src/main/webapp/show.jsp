@@ -24,7 +24,7 @@ width:50%;
 div{
 
 display: flex;
-justify-content: space-around;
+justify-content: center;
 margin:30px;
 }
 .tableUser{
@@ -33,13 +33,15 @@ justify-content: center;
 }
 .page{
 font-size: 20px;
+background-color: gray;
+
 }
 
 
-.page a{
+a{
 background-color :#f2f2f2;
 padding: 10px;
-
+margin:10px;
 }
 </style>
 </head>
@@ -72,7 +74,7 @@ padding: 10px;
 
 		</c:when>
 		<c:when test="${page>=maxPage-2}">
-			<c:forEach var="i" begin="${maxPage-5}" end="${maxPage}">
+			<c:forEach var="i" begin="${maxPage-4}" end="${maxPage}">
 				<a href="list?page=${i}">${i}</a>
 			</c:forEach>
 		</c:when>
